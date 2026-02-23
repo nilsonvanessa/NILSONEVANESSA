@@ -1,39 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Nilson ❤️ Vanessa</title>
+<meta charset="UTF-8">
+<title>Lista de Casamento - Nilson & Vanessa</title>
 
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#ffdde1,#ee9ca7);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
 
-    h1 {
-      font-size: 60px;
-      color: white;
-      text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-      animation: pulse 1.5s infinite;
-    }
+h1 {
+  color: white;
+  margin-bottom: 5px;
+}
 
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-  </style>
+h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  font-size: 16px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #198754;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #ff4d6d;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #d6336c;
+}
+</style>
 </head>
 
 <body>
 
-  <h1>💖 Vanessa, eu te amo 💖</h1>
+<h1>💍 Lista de Casamento 💖</h1>
+<h2>Nilson & Vanessa</h2>
+
+<div class="container">
+
+<!-- MODELO DE PRODUTO -->
+<div class="card">
+  <h3>🌀 Lavadora de Roupas</h3>
+  <p class="price">R$ 800,00</p>
+  <a class="btn" href="COLE_AQUI_LINK_MERCADO_PAGO" target="_blank">
+    Contribuir / Parcelar
+  </a>
+</div>
+
+<div class="card">
+  <h3>🌬 Secador de Cabelo</h3>
+  <p class="price">R$ 120,00</p>
+  <a class="btn" href="COLE_AQUI_LINK_MERCADO_PAGO" target="_blank">
+    Contribuir / Parcelar
+  </a>
+</div>
+
+<div class="card">
+  <h3>🚿 Chuveiro</h3>
+  <p class="price">R$ 150,00</p>
+  <a class="btn" href="COLE_AQUI_LINK_MERCADO_PAGO" target="_blank">
+    Contribuir / Parcelar
+  </a>
+</div>
+
+</div>
 
 </body>
 </html>
